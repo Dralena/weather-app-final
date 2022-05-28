@@ -11,13 +11,13 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
@@ -25,7 +25,7 @@
       <div class="weatherAppWrapper">
         <div class="appBorder">
           <h1>☀️ Your weather live! ☀️</h1>
-          <h2>Thursday 16:21</h2>
+          <h2 id="actual-date">Thursday 16:21</h2>
           <form id="search-form">
             <input type="text" class="tex" />
             <button class="submit">Search</button>
@@ -34,8 +34,8 @@
           <div class="row">
             <div class="col-4">
               <ul>
-                <li class="actualCity">Bern</li>
-                <li>Sunny</li>
+                <li id="actual-city"></li>
+                <li id="description"></li>
               </ul>
             </div>
             <div class="col-2">
@@ -46,13 +46,15 @@
               />
             </div>
             <div class="col-3">
-              <span class="currentTemp"><strong>12</strong> °C | °F</span>
+              <span class="currentTemp"
+                ><strong id="actual-temp"></strong
+                ><span id="units"> °C | °F</span></span
+              >
             </div>
             <div class="col-3">
               <ul>
-                <li>Precipitation: 0%</li>
-                <li>Humidity: 73%</li>
-                <li>Wind: 2 km/h</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
               </ul>
             </div>
           </div>
