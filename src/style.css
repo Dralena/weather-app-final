@@ -59,6 +59,21 @@ hr {
   line-height: 1;
 }
 
+.btn-primary {
+  color: #fff;
+  background-color: #4d4c7d;
+  transition: all 200ms ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #363062;
+  cursor: pointer;
+}
+
+#search-form {
+  margin-top: 50px;
+}
+
 #units {
   position: relative;
   top: -23px;
