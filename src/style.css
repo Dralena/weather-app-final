@@ -28,6 +28,7 @@ li {
 
 hr {
   margin: 40px 0px;
+  border: 2px solid #e9d5ca;
 }
 
 .weatherAppWrapper {
@@ -36,7 +37,7 @@ hr {
 }
 
 .appBorder {
-  border: 1px solid #e9d5ca;
+  border: 2px solid #e9d5ca;
   padding: 50px 50px;
   border-radius: 5px;
 }
@@ -75,6 +76,6 @@ hr {
   color: #4d4c7d;
 }
 
-#description {
+#description:first-letter {
   text-transform: capitalize;
 }
