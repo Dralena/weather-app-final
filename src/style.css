@@ -56,10 +56,12 @@ a:link {
 .currentImg {
   height: 64px;
   width: 64px;
+  position: relative;
+  top: -15px;
 }
 
 .currentTemp strong {
-  font-size: 48px;
+  font-size: 32px;
   line-height: 1;
 }
 
@@ -85,11 +87,12 @@ a:link {
 }
 
 .weather-forecast-date {
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 800;
 }
 
 .weather-forecast-temp {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .weather-forecast-temp-min {
@@ -102,12 +105,12 @@ a:link {
 
 #units {
   position: relative;
-  top: -24px;
+  top: -11px;
   padding-left: 5px;
 }
 
 #actual-city {
-  font-size: 48px;
+  font-size: 32px;
   color: #4d4c7d;
   font-weight: 800;
   line-height: 1;
@@ -119,4 +122,8 @@ a:link {
 
 #description:first-letter {
   text-transform: capitalize;
+}
+
+#actual {
+  text-align: center;
 }
