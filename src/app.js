@@ -107,23 +107,6 @@ function handleSubmit(event) {
   search(cityInput.value);
 }
 
-function showFahrenheit(event) {
-  event.preventDefault();
-  let temperature = document.querySelector("#actual-temp");
-  let fahrenheitTemp = (celciusTemp * 9) / 5 + 32;
-  temperature.innerHTML = Math.round(fahrenheitTemp);
-  celciusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-}
-
-function showCelcius(event) {
-  event.preventDefault();
-  let temperature = document.querySelector("#actual-temp");
-  temperature.innerHTML = Math.round(celciusTemp);
-  celciusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-}
-
 let apiKey = "23cbb82cefe3f543fc2729ccb9d974f4";
 let unit = "metric";
 
@@ -131,11 +114,5 @@ let celciusTemp = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
-
-let fahrenheitLink = document.querySelector("#fahrenheit");
-fahrenheitLink.addEventListener("click", showFahrenheit);
-
-let celciusLink = document.querySelector("#celcius");
-celciusLink.addEventListener("click", showCelcius);
 
 search("London");
