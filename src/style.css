@@ -53,11 +53,17 @@ a:link {
   padding-top: 20px;
 }
 
+.actual {
+  text-align: center;
+}
+
 .currentImg {
   height: 64px;
   width: 64px;
   position: relative;
   top: -15px;
+  display: block;
+  margin: 0 auto;
 }
 
 .currentTemp strong {
@@ -122,8 +128,4 @@ a:link {
 
 #description:first-letter {
   text-transform: capitalize;
-}
-
-#actual {
-  text-align: center;
 }
