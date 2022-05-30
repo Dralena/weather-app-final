@@ -5,7 +5,7 @@ body {
 h1 {
   color: #363062;
   text-align: center;
-  font-size: 64px;
+  font-size: 48px;
 }
 
 h2 {
@@ -77,6 +77,23 @@ a:link {
 .weather-temperature .active {
   color: #4d4c7d;
   cursor: default;
+}
+
+.weather-forecast {
+  text-align: center;
+  color: #4d4c7d;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+}
+
+.weather-forecast-temp {
+  font-size: 13px;
+}
+
+.weather-forecast-temp-min {
+  opacity: 0.6;
 }
 
 #search-form {
